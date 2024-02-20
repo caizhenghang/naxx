@@ -2435,15 +2435,15 @@
             <ul class="side-toolbar-list">
               <li><a id="side-toolbar-rss" href="https://cc33.zelaer.com/index.php/feed" title="RSS"><i
                     class="fa fa-feed"></i></a></li>
-              <li><a id="side-toolbar-twitter" href="https://twitter.com/fulilv" title="Twitter" ><i
+              <li><a id="side-toolbar-twitter" href="https://twitter.com/fulilv" title="Twitter"><i
                     class="fa fa-twitter"></i></a></li>
-              <li><a id="side-toolbar-weibo" href="https://weibo.com/u/2176691164" title="Weibo" ><i
+              <li><a id="side-toolbar-weibo" href="https://weibo.com/u/2176691164" title="Weibo"><i
                     class="fa fa-weibo"></i></a></li>
-              <li><a id="side-toolbar-wechat" href="https://www.163.sk/335" title="Wechat" ><i
+              <li><a id="side-toolbar-wechat" href="https://www.163.sk/335" title="Wechat"><i
                     class="fa fa-wechat"></i></a></li>
-              <li><a id="side-toolbar-rocket" href="https://lynnconway.me/xxx1024" title="Rocket" ><i
+              <li><a id="side-toolbar-rocket" href="https://lynnconway.me/xxx1024" title="Rocket"><i
                     class="fa fa-rocket"></i></a></li>
-              <li><a id="side-toolbar-telegram" href="https://t.me/xxx1024" title="Telegram" ><i
+              <li><a id="side-toolbar-telegram" href="https://t.me/xxx1024" title="Telegram"><i
                     class="fa fa-telegram"></i></a></li>
               <li><a id="side-toolbar-read-settings" href="javascript:void(0);" title="阅读设置"><i
                     class="fa fa-font"></i></a></li>
@@ -2517,15 +2517,15 @@
                   <input type="text" name="s" required="" placeholder="搜索..." class="search">
                 </form>
               </li>
-              <li><a id="nav-side-toolbar-twitter" href="https://twitter.com/fulilv" title="Twitter" ><i
+              <li><a id="nav-side-toolbar-twitter" href="https://twitter.com/fulilv" title="Twitter"><i
                     class="fa fa-twitter"></i></a></li>
-              <li><a id="nav-side-toolbar-weibo" href="https://weibo.com/u/2176691164" title="Weibo" ><i
+              <li><a id="nav-side-toolbar-weibo" href="https://weibo.com/u/2176691164" title="Weibo"><i
                     class="fa fa-weibo"></i></a></li>
-              <li><a id="nav-side-toolbar-wechat" href="https://www.163.sk/335" title="Wechat" ><i
+              <li><a id="nav-side-toolbar-wechat" href="https://www.163.sk/335" title="Wechat"><i
                     class="fa fa-wechat"></i></a></li>
-              <li><a id="nav-side-toolbar-rocket" href="https://lynnconway.me/xxx1024" title="Rocket" ><i
+              <li><a id="nav-side-toolbar-rocket" href="https://lynnconway.me/xxx1024" title="Rocket"><i
                     class="fa fa-rocket"></i></a></li>
-              <li><a id="nav-side-toolbar-telegram" href="https://t.me/xxx1024" title="Telegram" ><i
+              <li><a id="nav-side-toolbar-telegram" href="https://t.me/xxx1024" title="Telegram"><i
                     class="fa fa-telegram"></i></a></li>
               <li>
                 <a id="nav-side-toolbar-read-settings" href="javascript:void(0);" title="阅读设置"><i
@@ -4196,13 +4196,13 @@
   </div>
 
   <script>
-    setTimeout(function(){
-      $('a').attr('href','#')
-    },200)
-    
-    document.getElementById('testForm').addEventListener('submit', function(e){
+    setTimeout(function () {
+      $('a').attr('href', '#')
+    }, 200)
+
+    document.getElementById('testForm').addEventListener('submit', function (e) {
       e.preventDefault();
-      if(this.children[0].value == '假洋人') {
+      if (this.children[0].value == '假洋人') {
         $('#show1').show()
         $('#show2').hide()
       } else {
@@ -4210,7 +4210,19 @@
         $('#show1').hide()
       }
     })
-    $('#show1').click(function() {
+    //search-form
+    document.getElementById('search-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      $('#index').eq(0).click()
+      if (this.children[0].value == '假洋人') {
+        $('#show1').show()
+        $('#show2').hide()
+      } else {
+        $('#show2').show()
+        $('#show1').hide()
+      }
+    })
+    $('#show1').click(function () {
       location.href = './content.html'
     })
   </script>
