@@ -4213,7 +4213,7 @@
     //search-form
     document.getElementById('search-form').addEventListener('submit', function (e) {
       e.preventDefault();
-      $('#index').eq(0).click()
+      $('#wrap.display-nav').removeClass('display-nav')
       if (this.children[0].value == '假洋人') {
         $('#show1').show()
         $('#show2').hide()
