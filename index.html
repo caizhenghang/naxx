@@ -1,0 +1,4219 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="renderer" content="webkit">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <title>黑料正能量index.php</title>
+  <meta name="application-name" content="黑料正能量">
+  <meta name="apple-mobile-web-app-title" content="黑料正能量">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" href="/icon/apple-icon-57x57.png">
+  <script src="./js/jquery.min.js" type="text/javascript"></script>
+  <meta property="og:title" content="黑料正能量">
+  <!-- <meta property="og:site_name" content="黑料正能量">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Just So So ...">
+  <meta property="og:url" content="https://cc33.zelaer.com">
+  <meta property="og:image"
+    content="https://i.ibb.co/0CQfdsM/katie-treadway-Ew-E4t-BYh3ms-unsplash.jpg?imageView2/2/w/640/q/75">
+  <meta name="description" content="Just So So ...">
+  <meta name="keywords" content="typecho,php,blog">
+  <meta name="template" content="Mirages"> -->
+  <!-- <link rel="pingback" href="/index.php/action/xmlrpc">
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/index.php/action/xmlrpc?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/index.php/action/xmlrpc?wlw">
+  <link rel="alternate" type="application/rss+xml" title="黑料正能量 » RSS 2.0" href="/index.php/feed/">
+  <link rel="alternate" type="application/rdf+xml" title="黑料正能量 » RSS 1.0" href="/index.php/feed/rss/">
+  <link rel="alternate" type="application/atom+xml" title="黑料正能量 » ATOM 1.0" href="/index.php/feed/atom/"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./css/DPlayer.min.css">
+  <script type="text/javascript" src="./css/hls.min.js"></script>
+  <script type="text/javascript" src="./css/DPlayer.min.js"></script> -->
+  <style>
+    :root {
+      --balloon-border-radius: 2px;
+      --balloon-color: rgba(16, 16, 16, 0.95);
+      --balloon-text-color: #fff;
+      --balloon-font-size: 12px;
+      --balloon-move: 4px
+    }
+
+    button[aria-label][data-balloon-pos] {
+      overflow: visible
+    }
+
+    [aria-label][data-balloon-pos] {
+      position: relative;
+      cursor: pointer
+    }
+
+    [aria-label][data-balloon-pos]:after {
+      text-indent: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-shadow: none;
+      font-size: var(--balloon-font-size);
+      background: var(--balloon-color);
+      border-radius: 2px;
+      color: var(--balloon-text-color);
+      border-radius: var(--balloon-border-radius);
+      content: attr(aria-label);
+      padding: .5em 1em;
+      white-space: nowrap
+    }
+
+    [aria-label][data-balloon-pos]:after,
+    [aria-label][data-balloon-pos]:before {
+      opacity: 0;
+      pointer-events: none;
+      transition: all .18s ease-out .18s;
+      position: absolute;
+      z-index: 10
+    }
+
+    [aria-label][data-balloon-pos]:before {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top: 5px solid var(--balloon-color);
+      content: ""
+    }
+
+    [aria-label][data-balloon-pos]:hover:after,
+    [aria-label][data-balloon-pos]:hover:before,
+    [aria-label][data-balloon-pos]:not([data-balloon-nofocus]):focus:after,
+    [aria-label][data-balloon-pos]:not([data-balloon-nofocus]):focus:before,
+    [aria-label][data-balloon-pos][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-visible]:before {
+      opacity: 1;
+      pointer-events: none
+    }
+
+    [aria-label][data-balloon-pos].font-awesome:after {
+      font-family: FontAwesome, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-break]:after {
+      white-space: pre
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-break][data-balloon-length]:after {
+      white-space: pre-line;
+      word-break: break-word
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-blunt]:after,
+    [aria-label][data-balloon-pos][data-balloon-blunt]:before {
+      transition: none
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up]:after {
+      margin-bottom: 10px
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up]:before {
+      bottom: 100%;
+      left: 50%;
+      transform: translate(-50%, var(--balloon-move));
+      transform-origin: top
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=up][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up][data-balloon-visible]:before {
+      transform: translate(-50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up-left]:after {
+      bottom: 100%;
+      left: 0;
+      margin-bottom: 10px;
+      transform: translateY(var(--balloon-move));
+      transform-origin: top
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up-left]:before {
+      bottom: 100%;
+      left: 5px;
+      transform: translateY(var(--balloon-move));
+      transform-origin: top
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up-left]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up-left]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=up-left][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up-left][data-balloon-visible]:before {
+      transform: translate(0)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up-right]:after {
+      bottom: 100%;
+      right: 0;
+      margin-bottom: 10px;
+      transform: translateY(var(--balloon-move));
+      transform-origin: top
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up-right]:before {
+      bottom: 100%;
+      right: 5px;
+      transform: translateY(var(--balloon-move));
+      transform-origin: top
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=up-right]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up-right]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=up-right][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=up-right][data-balloon-visible]:before {
+      transform: translate(0)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down]:after {
+      left: 50%;
+      margin-top: 10px;
+      top: 100%;
+      transform: translate(-50%, calc(var(--balloon-move)*-1))
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down]:before {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-bottom: 5px solid var(--balloon-color);
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, calc(var(--balloon-move)*-1))
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=down]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=down][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=down][data-balloon-visible]:before {
+      transform: translate(-50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down-left]:after {
+      left: 0;
+      margin-top: 10px;
+      top: 100%;
+      transform: translateY(calc(var(--balloon-move)*-1))
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down-left]:before {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-bottom: 5px solid var(--balloon-color);
+      left: 5px;
+      top: 100%;
+      transform: translateY(calc(var(--balloon-move)*-1))
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down-left]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=down-left]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=down-left][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=down-left][data-balloon-visible]:before {
+      transform: translate(0)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down-right]:after {
+      right: 0;
+      margin-top: 10px;
+      top: 100%;
+      transform: translateY(calc(var(--balloon-move)*-1))
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down-right]:before {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-bottom: 5px solid var(--balloon-color);
+      right: 5px;
+      top: 100%;
+      transform: translateY(calc(var(--balloon-move)*-1))
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=down-right]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=down-right]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=down-right][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=down-right][data-balloon-visible]:before {
+      transform: translate(0)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=left]:after {
+      margin-right: 10px;
+      right: 100%;
+      top: 50%;
+      transform: translate(var(--balloon-move), -50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=left]:before {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-left: 5px solid var(--balloon-color);
+      right: 100%;
+      top: 50%;
+      transform: translate(var(--balloon-move), -50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=left]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=left]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=left][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=left][data-balloon-visible]:before {
+      transform: translateY(-50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=right]:after {
+      left: 100%;
+      margin-left: 10px;
+      top: 50%;
+      transform: translate(calc(var(--balloon-move)*-1), -50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=right]:before {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-right: 5px solid var(--balloon-color);
+      left: 100%;
+      top: 50%;
+      transform: translate(calc(var(--balloon-move)*-1), -50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-pos=right]:hover:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=right]:hover:before,
+    [aria-label][data-balloon-pos][data-balloon-pos=right][data-balloon-visible]:after,
+    [aria-label][data-balloon-pos][data-balloon-pos=right][data-balloon-visible]:before {
+      transform: translateY(-50%)
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-length=small]:after {
+      white-space: normal;
+      width: 80px
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-length=medium]:after {
+      white-space: normal;
+      width: 150px
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-length=large]:after {
+      white-space: normal;
+      width: 260px
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-length=xlarge]:after {
+      white-space: normal;
+      width: 380px
+    }
+
+    @media screen and (max-width:768px) {
+      [aria-label][data-balloon-pos][data-balloon-length=xlarge]:after {
+        white-space: normal;
+        width: 90vw
+      }
+    }
+
+    [aria-label][data-balloon-pos][data-balloon-length=fit]:after {
+      white-space: normal;
+      width: 100%
+    }
+  </style>
+  <style>
+    @-webkit-keyframes my-face {
+      2% {
+        transform: translateY(1.5px) rotate(1.5deg)
+      }
+
+      4% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+      }
+
+      6% {
+        transform: translateY(1.5px) rotate(-1.5deg)
+      }
+
+      8% {
+        transform: translateY(-1.5px) rotate(-1.5deg)
+      }
+
+      10% {
+        transform: translateY(2.5px) rotate(1.5deg)
+      }
+
+      12% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      14% {
+        transform: translateY(-1.5px) rotate(1.5deg)
+      }
+
+      16% {
+        transform: translateY(-.5px) rotate(-1.5deg)
+      }
+
+      18% {
+        transform: translateY(.5px) rotate(-1.5deg)
+      }
+
+      20% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+      }
+
+      22% {
+        transform: translateY(.5px) rotate(-1.5deg)
+      }
+
+      24% {
+        transform: translateY(1.5px) rotate(1.5deg)
+      }
+
+      26% {
+        transform: translateY(.5px) rotate(.5deg)
+      }
+
+      28% {
+        transform: translateY(.5px) rotate(1.5deg)
+      }
+
+      30% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      32% {
+        transform: translateY(1.5px) rotate(-.5deg)
+      }
+
+      34% {
+        transform: translateY(1.5px) rotate(-.5deg)
+      }
+
+      36% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+      }
+
+      38% {
+        transform: translateY(1.5px) rotate(-1.5deg)
+      }
+
+      40% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      42% {
+        transform: translateY(2.5px) rotate(-1.5deg)
+      }
+
+      44% {
+        transform: translateY(1.5px) rotate(.5deg)
+      }
+
+      46% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+      }
+
+      48% {
+        transform: translateY(-.5px) rotate(.5deg)
+      }
+
+      50% {
+        transform: translateY(.5px) rotate(.5deg)
+      }
+
+      52% {
+        transform: translateY(2.5px) rotate(2.5deg)
+      }
+
+      54% {
+        transform: translateY(-1.5px) rotate(1.5deg)
+      }
+
+      56% {
+        transform: translateY(2.5px) rotate(2.5deg)
+      }
+
+      58% {
+        transform: translateY(.5px) rotate(2.5deg)
+      }
+
+      60% {
+        transform: translateY(2.5px) rotate(2.5deg)
+      }
+
+      62% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      64% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      66% {
+        transform: translateY(1.5px) rotate(-.5deg)
+      }
+
+      68% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+      }
+
+      70% {
+        transform: translateY(1.5px) rotate(.5deg)
+      }
+
+      72% {
+        transform: translateY(2.5px) rotate(1.5deg)
+      }
+
+      74% {
+        transform: translateY(-.5px) rotate(.5deg)
+      }
+
+      76% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      78% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      80% {
+        transform: translateY(1.5px) rotate(1.5deg)
+      }
+
+      82% {
+        transform: translateY(-.5px) rotate(.5deg)
+      }
+
+      84% {
+        transform: translateY(1.5px) rotate(2.5deg)
+      }
+
+      86% {
+        transform: translateY(-1.5px) rotate(-1.5deg)
+      }
+
+      88% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      90% {
+        transform: translateY(2.5px) rotate(-.5deg)
+      }
+
+      92% {
+        transform: translateY(.5px) rotate(-.5deg)
+      }
+
+      94% {
+        transform: translateY(2.5px) rotate(.5deg)
+      }
+
+      96% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      98% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+      }
+
+      0%,
+      to {
+        transform: translate(0) rotate(0deg)
+      }
+    }
+
+    @keyframes my-face {
+      2% {
+        transform: translateY(1.5px) rotate(1.5deg)
+      }
+
+      4% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+      }
+
+      6% {
+        transform: translateY(1.5px) rotate(-1.5deg)
+      }
+
+      8% {
+        transform: translateY(-1.5px) rotate(-1.5deg)
+      }
+
+      10% {
+        transform: translateY(2.5px) rotate(1.5deg)
+      }
+
+      12% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      14% {
+        transform: translateY(-1.5px) rotate(1.5deg)
+      }
+
+      16% {
+        transform: translateY(-.5px) rotate(-1.5deg)
+      }
+
+      18% {
+        transform: translateY(.5px) rotate(-1.5deg)
+      }
+
+      20% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+      }
+
+      22% {
+        transform: translateY(.5px) rotate(-1.5deg)
+      }
+
+      24% {
+        transform: translateY(1.5px) rotate(1.5deg)
+      }
+
+      26% {
+        transform: translateY(.5px) rotate(.5deg)
+      }
+
+      28% {
+        transform: translateY(.5px) rotate(1.5deg)
+      }
+
+      30% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      32% {
+        transform: translateY(1.5px) rotate(-.5deg)
+      }
+
+      34% {
+        transform: translateY(1.5px) rotate(-.5deg)
+      }
+
+      36% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+      }
+
+      38% {
+        transform: translateY(1.5px) rotate(-1.5deg)
+      }
+
+      40% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      42% {
+        transform: translateY(2.5px) rotate(-1.5deg)
+      }
+
+      44% {
+        transform: translateY(1.5px) rotate(.5deg)
+      }
+
+      46% {
+        transform: translateY(-1.5px) rotate(2.5deg)
+      }
+
+      48% {
+        transform: translateY(-.5px) rotate(.5deg)
+      }
+
+      50% {
+        transform: translateY(.5px) rotate(.5deg)
+      }
+
+      52% {
+        transform: translateY(2.5px) rotate(2.5deg)
+      }
+
+      54% {
+        transform: translateY(-1.5px) rotate(1.5deg)
+      }
+
+      56% {
+        transform: translateY(2.5px) rotate(2.5deg)
+      }
+
+      58% {
+        transform: translateY(.5px) rotate(2.5deg)
+      }
+
+      60% {
+        transform: translateY(2.5px) rotate(2.5deg)
+      }
+
+      62% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      64% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      66% {
+        transform: translateY(1.5px) rotate(-.5deg)
+      }
+
+      68% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+      }
+
+      70% {
+        transform: translateY(1.5px) rotate(.5deg)
+      }
+
+      72% {
+        transform: translateY(2.5px) rotate(1.5deg)
+      }
+
+      74% {
+        transform: translateY(-.5px) rotate(.5deg)
+      }
+
+      76% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      78% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      80% {
+        transform: translateY(1.5px) rotate(1.5deg)
+      }
+
+      82% {
+        transform: translateY(-.5px) rotate(.5deg)
+      }
+
+      84% {
+        transform: translateY(1.5px) rotate(2.5deg)
+      }
+
+      86% {
+        transform: translateY(-1.5px) rotate(-1.5deg)
+      }
+
+      88% {
+        transform: translateY(-.5px) rotate(2.5deg)
+      }
+
+      90% {
+        transform: translateY(2.5px) rotate(-.5deg)
+      }
+
+      92% {
+        transform: translateY(.5px) rotate(-.5deg)
+      }
+
+      94% {
+        transform: translateY(2.5px) rotate(.5deg)
+      }
+
+      96% {
+        transform: translateY(-.5px) rotate(1.5deg)
+      }
+
+      98% {
+        transform: translateY(-1.5px) rotate(-.5deg)
+      }
+
+      0%,
+      to {
+        transform: translate(0) rotate(0deg)
+      }
+    }
+
+    .dplayer {
+      position: relative;
+      overflow: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      line-height: 1
+    }
+
+    .dplayer * {
+      box-sizing: content-box
+    }
+
+    .dplayer svg {
+      width: 100%;
+      height: 100%
+    }
+
+    .dplayer svg circle,
+    .dplayer svg path {
+      fill: #fff
+    }
+
+    .dplayer:-webkit-full-screen {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      position: fixed;
+      z-index: 100000;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+      transform: translate(0)
+    }
+
+    .dplayer:-webkit-full-screen .dplayer-danmaku .dplayer-danmaku-bottom.dplayer-danmaku-move,
+    .dplayer:-webkit-full-screen .dplayer-danmaku .dplayer-danmaku-top.dplayer-danmaku-move {
+      -webkit-animation: danmaku-center 6s linear;
+      animation: danmaku-center 6s linear;
+      -webkit-animation-play-state: inherit;
+      animation-play-state: inherit
+    }
+
+    .dplayer:-webkit-full-screen .dplayer-danmaku .dplayer-danmaku-right.dplayer-danmaku-move {
+      -webkit-animation: danmaku 8s linear;
+      animation: danmaku 8s linear;
+      -webkit-animation-play-state: inherit;
+      animation-play-state: inherit
+    }
+
+    .dplayer.dplayer-live .dplayer-bar-wrap,
+    .dplayer.dplayer-live.dplayer-no-danmaku .dplayer-setting,
+    .dplayer.dplayer-live .dplayer-setting-loop,
+    .dplayer.dplayer-live .dplayer-setting-speed,
+    .dplayer.dplayer-live .dplayer-time,
+    .dplayer.dplayer-no-danmaku .dplayer-controller .dplayer-icons .dplayer-comment,
+    .dplayer.dplayer-no-danmaku .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box .dplayer-setting-danmaku,
+    .dplayer.dplayer-no-danmaku .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box .dplayer-setting-danunlimit,
+    .dplayer.dplayer-no-danmaku .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box .dplayer-setting-showdan,
+    .dplayer.dplayer-no-danmaku .dplayer-danmaku {
+      display: none
+    }
+
+    .dplayer.dplayer-arrow .dplayer-danmaku {
+      font-size: 18px
+    }
+
+    .dplayer.dplayer-arrow .dplayer-icon {
+      margin: 0 -3px
+    }
+
+    .dplayer.dplayer-playing .dplayer-danmaku .dplayer-danmaku-move {
+      -webkit-animation-play-state: running;
+      animation-play-state: running
+    }
+
+    @media (min-width:900px) {
+
+      .dplayer.dplayer-playing .dplayer-controller,
+      .dplayer.dplayer-playing .dplayer-controller-mask {
+        opacity: 0
+      }
+
+      .dplayer.dplayer-playing:hover .dplayer-controller,
+      .dplayer.dplayer-playing:hover .dplayer-controller-mask {
+        opacity: 1
+      }
+    }
+
+    .dplayer.dplayer-loading .dplayer-bezel .diplayer-loading-icon {
+      display: block
+    }
+
+    .dplayer.dplayer-loading .dplayer-danmaku,
+    .dplayer.dplayer-loading .dplayer-danmaku-move,
+    .dplayer.dplayer-paused .dplayer-danmaku,
+    .dplayer.dplayer-paused .dplayer-danmaku-move {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused
+    }
+
+    .dplayer.dplayer-hide-controller {
+      cursor: none
+    }
+
+    .dplayer.dplayer-hide-controller .dplayer-controller,
+    .dplayer.dplayer-hide-controller .dplayer-controller-mask {
+      opacity: 0;
+      transform: translateY(100%)
+    }
+
+    .dplayer.dplayer-show-controller .dplayer-controller,
+    .dplayer.dplayer-show-controller .dplayer-controller-mask {
+      opacity: 1
+    }
+
+    .dplayer.dplayer-fulled {
+      position: fixed;
+      z-index: 100000;
+      left: 0;
+      top: 0;
+      width: 100% !important;
+      height: 100% !important
+    }
+
+    .dplayer.dplayer-mobile .dplayer-controller .dplayer-icons .dplayer-airplay-icon,
+    .dplayer.dplayer-mobile .dplayer-controller .dplayer-icons .dplayer-camera-icon,
+    .dplayer.dplayer-mobile .dplayer-controller .dplayer-icons .dplayer-play-icon,
+    .dplayer.dplayer-mobile .dplayer-controller .dplayer-icons .dplayer-volume {
+      display: none
+    }
+
+    .dplayer.dplayer-mobile .dplayer-controller .dplayer-icons .dplayer-full .dplayer-full-in-icon {
+      position: static;
+      display: inline-block
+    }
+
+    .dplayer.dplayer-mobile .dplayer-bar-time,
+    .dplayer.dplayer-mobile.dplayer-hide-controller .dplayer-mobile-play {
+      display: none
+    }
+
+    .dplayer.dplayer-mobile .dplayer-mobile-play {
+      display: block
+    }
+
+    .dplayer-web-fullscreen-fix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0
+    }
+
+    [data-balloon]:before {
+      display: none
+    }
+
+    [data-balloon]:after {
+      padding: .3em .7em;
+      background: rgba(17, 17, 17, .7)
+    }
+
+    [data-balloon][data-balloon-pos=up]:after {
+      margin-bottom: 0
+    }
+
+    .dplayer-bezel {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 22px;
+      color: #fff;
+      pointer-events: none
+    }
+
+    .dplayer-bezel .dplayer-bezel-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -26px 0 0 -26px;
+      height: 52px;
+      width: 52px;
+      padding: 12px;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, .5);
+      border-radius: 50%;
+      opacity: 0;
+      pointer-events: none
+    }
+
+    .dplayer-bezel .dplayer-bezel-icon.dplayer-bezel-transition {
+      -webkit-animation: bezel-hide .5s linear;
+      animation: bezel-hide .5s linear
+    }
+
+    @-webkit-keyframes bezel-hide {
+      0% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      to {
+        opacity: 0;
+        transform: scale(2)
+      }
+    }
+
+    @keyframes bezel-hide {
+      0% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      to {
+        opacity: 0;
+        transform: scale(2)
+      }
+    }
+
+    .dplayer-bezel .dplayer-danloading {
+      position: absolute;
+      top: 50%;
+      margin-top: -7px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 14px;
+      -webkit-animation: my-face 5s ease-in-out infinite;
+      animation: my-face 5s ease-in-out infinite
+    }
+
+    .dplayer-bezel .diplayer-loading-icon {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -18px 0 0 -18px;
+      height: 36px;
+      width: 36px;
+      pointer-events: none
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-hide {
+      display: none
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot {
+      -webkit-animation: diplayer-loading-dot-fade .8s ease infinite;
+      animation: diplayer-loading-dot-fade .8s ease infinite;
+      opacity: 0;
+      transform-origin: 4px 4px
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-7 {
+      -webkit-animation-delay: .7s;
+      animation-delay: .7s
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-6 {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-5 {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-4 {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-3 {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-2 {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+    }
+
+    .dplayer-bezel .diplayer-loading-icon .diplayer-loading-dot.diplayer-loading-dot-1 {
+      -webkit-animation-delay: .1s;
+      animation-delay: .1s
+    }
+
+    @-webkit-keyframes diplayer-loading-dot-fade {
+      0% {
+        opacity: .7;
+        transform: scale(1.2)
+      }
+
+      50% {
+        opacity: .25;
+        transform: scale(.9)
+      }
+
+      to {
+        opacity: .25;
+        transform: scale(.85)
+      }
+    }
+
+    @keyframes diplayer-loading-dot-fade {
+      0% {
+        opacity: .7;
+        transform: scale(1.2)
+      }
+
+      50% {
+        opacity: .25;
+        transform: scale(.9)
+      }
+
+      to {
+        opacity: .25;
+        transform: scale(.85)
+      }
+    }
+
+    .dplayer-controller-mask {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==) repeat-x bottom;
+      height: 98px;
+      width: 100%
+    }
+
+    .dplayer-controller,
+    .dplayer-controller-mask {
+      position: absolute;
+      bottom: 0;
+      transition: all .3s ease
+    }
+
+    .dplayer-controller {
+      left: 0;
+      right: 0;
+      height: 41px;
+      padding: 0 20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .dplayer-controller.dplayer-controller-comment .dplayer-icons {
+      display: none
+    }
+
+    .dplayer-controller.dplayer-controller-comment .dplayer-icons.dplayer-comment-box {
+      display: block
+    }
+
+    .dplayer-controller .dplayer-bar-wrap {
+      padding: 5px 0;
+      cursor: pointer;
+      position: absolute;
+      bottom: 33px;
+      width: calc(100% - 40px);
+      height: 3px
+    }
+
+    .dplayer-controller .dplayer-bar-wrap:hover .dplayer-bar .dplayer-played .dplayer-thumb {
+      transform: scale(1)
+    }
+
+    .dplayer-controller .dplayer-bar-wrap:hover .dplayer-highlight {
+      display: block;
+      width: 8px;
+      transform: translateX(-4px);
+      top: 4px;
+      height: 40%
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-highlight {
+      z-index: 12;
+      position: absolute;
+      top: 5px;
+      width: 6px;
+      height: 20%;
+      border-radius: 6px;
+      background-color: #fff;
+      text-align: center;
+      transform: translateX(-3px);
+      transition: all .2s ease-in-out
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-highlight:hover .dplayer-highlight-text {
+      display: block
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-highlight:hover~.dplayer-bar-preview,
+    .dplayer-controller .dplayer-bar-wrap .dplayer-highlight:hover~.dplayer-bar-time {
+      opacity: 0
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-highlight .dplayer-highlight-text {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: -24px;
+      padding: 5px 8px;
+      background-color: rgba(0, 0, 0, .62);
+      color: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      transform: translateX(-50%)
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar-preview {
+      position: absolute;
+      background: #fff;
+      pointer-events: none;
+      display: none;
+      background-size: 16000px 100%
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar-preview-canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar-time {
+      position: absolute;
+      left: 0;
+      top: -20px;
+      border-radius: 4px;
+      padding: 5px 7px;
+      background-color: rgba(0, 0, 0, .62);
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      opacity: 1;
+      transition: opacity .1s ease-in-out;
+      word-wrap: normal;
+      word-break: normal;
+      z-index: 2;
+      pointer-events: none
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar-time.hidden {
+      opacity: 0
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar {
+      position: relative;
+      height: 3px;
+      width: 100%;
+      background: hsla(0, 0%, 100%, .2);
+      cursor: pointer
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar .dplayer-loaded {
+      background: hsla(0, 0%, 100%, .4);
+      transition: all .5s ease
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar .dplayer-loaded,
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar .dplayer-played {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 3px;
+      will-change: width
+    }
+
+    .dplayer-controller .dplayer-bar-wrap .dplayer-bar .dplayer-played .dplayer-thumb {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      margin-top: -4px;
+      margin-right: -10px;
+      height: 11px;
+      width: 11px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      transform: scale(0)
+    }
+
+    .dplayer-controller .dplayer-icons {
+      height: 38px;
+      position: absolute;
+      bottom: 0
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box {
+      display: none;
+      position: absolute;
+      transition: all .3s ease-in-out;
+      z-index: 2;
+      height: 38px;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      color: #fff
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-icon {
+      padding: 7px
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-icon {
+      position: absolute;
+      left: 0;
+      top: 0
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-send-icon {
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box {
+      position: absolute;
+      background: rgba(28, 28, 28, .9);
+      bottom: 41px;
+      left: 0;
+      box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+      border-radius: 4px;
+      padding: 10px 10px 16px;
+      font-size: 14px;
+      width: 204px;
+      transition: all .3s ease-in-out;
+      transform: scale(0)
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box.dplayer-comment-setting-open {
+      transform: scale(1)
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box input[type=radio] {
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box label {
+      cursor: pointer
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-title {
+      font-size: 13px;
+      color: #fff;
+      line-height: 30px
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-type {
+      font-size: 0
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-type .dplayer-comment-setting-title {
+      margin-bottom: 6px
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-type label:nth-child(2) span {
+      border-radius: 4px 0 0 4px
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-type label:nth-child(4) span {
+      border-radius: 0 4px 4px 0
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-type span {
+      width: 33%;
+      padding: 4px 6px;
+      line-height: 16px;
+      display: inline-block;
+      font-size: 12px;
+      color: #fff;
+      border: 1px solid #fff;
+      margin-right: -1px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-type input:checked+span {
+      background: #e4e4e6;
+      color: #1c1c1c
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-color {
+      font-size: 0
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-color label {
+      font-size: 0;
+      padding: 6px;
+      display: inline-block
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-color span {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      border-radius: 50%;
+      box-sizing: border-box;
+      cursor: pointer
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-setting-box .dplayer-comment-setting-color span:hover {
+      -webkit-animation: my-face 5s ease-in-out infinite;
+      animation: my-face 5s ease-in-out infinite
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input {
+      outline: none;
+      border: none;
+      padding: 8px 31px;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      border-radius: 4px;
+      background: none;
+      margin: 0;
+      height: 100%;
+      box-sizing: border-box;
+      width: 100%;
+      color: #fff
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input::-webkit-input-placeholder {
+      color: #fff;
+      opacity: .8
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input::-moz-placeholder {
+      color: #fff;
+      opacity: .8
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input:-ms-input-placeholder {
+      color: #fff;
+      opacity: .8
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input::-ms-input-placeholder {
+      color: #fff;
+      opacity: .8
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input::placeholder {
+      color: #fff;
+      opacity: .8
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-comment-box .dplayer-comment-input::-ms-clear {
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-icons-left .dplayer-icon {
+      padding: 7px
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-icons-right {
+      right: 20px
+    }
+
+    .dplayer-controller .dplayer-icons.dplayer-icons-right .dplayer-icon {
+      padding: 8px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-live-badge,
+    .dplayer-controller .dplayer-icons .dplayer-time {
+      line-height: 38px;
+      color: #eee;
+      text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+      vertical-align: middle;
+      font-size: 13px;
+      cursor: default
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-live-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      vertical-align: 4%;
+      margin-right: 5px;
+      content: "";
+      border-radius: 6px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon {
+      width: 40px;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      vertical-align: middle;
+      box-sizing: border-box;
+      display: inline-block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon .dplayer-icon-content {
+      transition: all .2s ease-in-out;
+      opacity: .8
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon:hover .dplayer-icon-content {
+      opacity: 1
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon.dplayer-quality-icon {
+      color: #fff;
+      width: auto;
+      line-height: 22px;
+      font-size: 14px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon.dplayer-comment-icon {
+      padding: 10px 9px 9px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon.dplayer-setting-icon {
+      padding-top: 8.5px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-icon.dplayer-volume-icon {
+      width: 43px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      height: 100%
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume:hover .dplayer-volume-bar-wrap .dplayer-volume-bar {
+      width: 45px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume:hover .dplayer-volume-bar-wrap .dplayer-volume-bar .dplayer-volume-bar-inner .dplayer-thumb {
+      transform: scale(1)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume.dplayer-volume-active .dplayer-volume-bar-wrap .dplayer-volume-bar {
+      width: 45px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume.dplayer-volume-active .dplayer-volume-bar-wrap .dplayer-volume-bar .dplayer-volume-bar-inner .dplayer-thumb {
+      transform: scale(1)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume .dplayer-volume-bar-wrap {
+      display: inline-block;
+      margin: 0 10px 0 -5px;
+      vertical-align: middle;
+      height: 100%
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume .dplayer-volume-bar-wrap .dplayer-volume-bar {
+      position: relative;
+      top: 17px;
+      width: 0;
+      height: 3px;
+      background: #aaa;
+      transition: all .3s ease-in-out
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume .dplayer-volume-bar-wrap .dplayer-volume-bar .dplayer-volume-bar-inner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      transition: all .1s ease;
+      will-change: width
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-volume .dplayer-volume-bar-wrap .dplayer-volume-bar .dplayer-volume-bar-inner .dplayer-thumb {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      margin-top: -4px;
+      margin-right: -10px;
+      height: 11px;
+      width: 11px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      transform: scale(0)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting,
+    .dplayer-controller .dplayer-icons .dplayer-subtitle-btn {
+      display: inline-block;
+      height: 100%
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box {
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+      transform: scale(0);
+      width: 150px;
+      border-radius: 2px;
+      background: rgba(28, 28, 28, .9);
+      padding: 7px 0;
+      transition: all .3s ease-in-out;
+      overflow: hidden;
+      z-index: 2
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box>div {
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box>div.dplayer-setting-origin-panel {
+      display: block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box.dplayer-setting-box-open {
+      transform: scale(1)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box.dplayer-setting-box-narrow {
+      width: 70px;
+      text-align: center
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box.dplayer-setting-box-speed .dplayer-setting-origin-panel {
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box.dplayer-setting-box-speed .dplayer-setting-speed-panel {
+      display: block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-item,
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-speed-item {
+      height: 30px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+      position: relative
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-item:hover,
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-speed-item:hover {
+      background-color: hsla(0, 0%, 100%, .1)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku {
+      padding: 5px 0
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku .dplayer-label {
+      padding: 0 10px;
+      display: inline
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku:hover .dplayer-label {
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku:hover .dplayer-danmaku-bar-wrap {
+      display: inline-block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku.dplayer-setting-danmaku-active .dplayer-label {
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku.dplayer-setting-danmaku-active .dplayer-danmaku-bar-wrap {
+      display: inline-block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku .dplayer-danmaku-bar-wrap {
+      padding: 0 10px;
+      box-sizing: border-box;
+      display: none;
+      vertical-align: middle;
+      height: 100%;
+      width: 100%
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku .dplayer-danmaku-bar-wrap .dplayer-danmaku-bar {
+      position: relative;
+      top: 8.5px;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      transition: all .3s ease-in-out
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku .dplayer-danmaku-bar-wrap .dplayer-danmaku-bar .dplayer-danmaku-bar-inner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      transition: all .1s ease;
+      background: #aaa;
+      will-change: width
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku .dplayer-danmaku-bar-wrap .dplayer-danmaku-bar .dplayer-danmaku-bar-inner .dplayer-thumb {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      margin-top: -4px;
+      margin-right: -10px;
+      height: 11px;
+      width: 11px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      background: #aaa
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-full {
+      display: inline-block;
+      height: 100%;
+      position: relative
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-full:hover .dplayer-full-in-icon {
+      display: block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-full .dplayer-full-in-icon {
+      position: absolute;
+      top: -30px;
+      z-index: 1;
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-quality {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      z-index: 2
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-quality:hover .dplayer-quality-list,
+    .dplayer-controller .dplayer-icons .dplayer-quality:hover .dplayer-quality-mask {
+      display: block
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-quality .dplayer-quality-mask {
+      display: none;
+      position: absolute;
+      bottom: 38px;
+      left: -18px;
+      width: 80px;
+      padding-bottom: 12px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-quality .dplayer-quality-list {
+      display: none;
+      font-size: 12px;
+      width: 80px;
+      border-radius: 2px;
+      background: rgba(28, 28, 28, .9);
+      padding: 5px 0;
+      transition: all .3s ease-in-out;
+      overflow: hidden;
+      color: #fff;
+      text-align: center
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-quality .dplayer-quality-item {
+      height: 25px;
+      box-sizing: border-box;
+      cursor: pointer;
+      line-height: 25px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-quality .dplayer-quality-item:hover {
+      background-color: hsla(0, 0%, 100%, .1)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-comment {
+      display: inline-block;
+      height: 100%
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-label {
+      color: #eee;
+      font-size: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      white-space: nowrap
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle {
+      width: 32px;
+      height: 20px;
+      text-align: center;
+      font-size: 0;
+      vertical-align: middle;
+      position: absolute;
+      top: 5px;
+      right: 10px
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input {
+      max-height: 0;
+      max-width: 0;
+      display: none
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input+label {
+      display: inline-block;
+      position: relative;
+      box-shadow: inset 0 0 0 0 #dfdfdf;
+      border: 1px solid #dfdfdf;
+      height: 20px;
+      width: 32px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: .2s ease-in-out
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input+label:after,
+    .dplayer-controller .dplayer-icons .dplayer-toggle input+label:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 18px;
+      width: 18px;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      transition: .2s ease-in-out
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input+label:after {
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input:checked+label {
+      border-color: hsla(0, 0%, 100%, .5)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input:checked+label:before {
+      width: 30px;
+      background: hsla(0, 0%, 100%, .5)
+    }
+
+    .dplayer-controller .dplayer-icons .dplayer-toggle input:checked+label:after {
+      left: 12px
+    }
+
+    .dplayer-mobile-play {
+      display: none;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      bottom: 0;
+      opacity: .8;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .dplayer-danmaku {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 22px;
+      color: #fff
+    }
+
+    .dplayer-danmaku .dplayer-danmaku-item {
+      display: inline-block;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+      white-space: nowrap;
+      text-shadow: .5px .5px .5px rgba(0, 0, 0, .5)
+    }
+
+    .dplayer-danmaku .dplayer-danmaku-item--demo {
+      position: absolute;
+      visibility: hidden
+    }
+
+    .dplayer-danmaku .dplayer-danmaku-right {
+      position: absolute;
+      right: 0;
+      transform: translateX(100%)
+    }
+
+    .dplayer-danmaku .dplayer-danmaku-right.dplayer-danmaku-move {
+      will-change: transform;
+      -webkit-animation: danmaku 5s linear;
+      animation: danmaku 5s linear;
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused
+    }
+
+    @-webkit-keyframes danmaku {
+      0% {
+        transform: translateX(100%)
+      }
+    }
+
+    @keyframes danmaku {
+      0% {
+        transform: translateX(100%)
+      }
+    }
+
+    .dplayer-danmaku .dplayer-danmaku-bottom,
+    .dplayer-danmaku .dplayer-danmaku-top {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      visibility: hidden
+    }
+
+    .dplayer-danmaku .dplayer-danmaku-bottom.dplayer-danmaku-move,
+    .dplayer-danmaku .dplayer-danmaku-top.dplayer-danmaku-move {
+      will-change: visibility;
+      -webkit-animation: danmaku-center 4s linear;
+      animation: danmaku-center 4s linear;
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused
+    }
+
+    @-webkit-keyframes danmaku-center {
+      0% {
+        visibility: visible
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes danmaku-center {
+      0% {
+        visibility: visible
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    .dplayer-logo {
+      pointer-events: none;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      max-width: 50px;
+      max-height: 50px
+    }
+
+    .dplayer-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      background: none
+    }
+
+    .dplayer-menu {
+      position: absolute;
+      width: 170px;
+      border-radius: 2px;
+      background: rgba(28, 28, 28, .85);
+      padding: 5px 0;
+      overflow: hidden;
+      z-index: 3;
+      display: none
+    }
+
+    .dplayer-menu.dplayer-menu-show {
+      display: block
+    }
+
+    .dplayer-menu .dplayer-menu-item {
+      height: 30px;
+      box-sizing: border-box;
+      cursor: pointer
+    }
+
+    .dplayer-menu .dplayer-menu-item:hover {
+      background-color: hsla(0, 0%, 100%, .1)
+    }
+
+    .dplayer-menu .dplayer-menu-item a {
+      padding: 0 10px;
+      line-height: 30px;
+      color: #eee;
+      font-size: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      box-sizing: border-box;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden
+    }
+
+    .dplayer-menu .dplayer-menu-item a:hover {
+      text-decoration: none
+    }
+
+    .dplayer-notice {
+      opacity: 0;
+      position: absolute;
+      bottom: 60px;
+      left: 20px;
+      font-size: 14px;
+      border-radius: 2px;
+      background: rgba(28, 28, 28, .9);
+      padding: 7px 20px;
+      transition: all .3s ease-in-out;
+      overflow: hidden;
+      color: #fff;
+      pointer-events: none
+    }
+
+    .dplayer-subtitle {
+      position: absolute;
+      bottom: 40px;
+      width: 90%;
+      left: 5%;
+      text-align: center;
+      color: #fff;
+      text-shadow: .5px .5px .5px rgba(0, 0, 0, .5);
+      font-size: 20px
+    }
+
+    .dplayer-subtitle.dplayer-subtitle-hide {
+      display: none
+    }
+
+    .dplayer-mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      display: none
+    }
+
+    .dplayer-mask.dplayer-mask-show {
+      display: block
+    }
+
+    .dplayer-video-wrap {
+      position: relative;
+      background: #000;
+      font-size: 0;
+      width: 100%;
+      height: 100%
+    }
+
+    .dplayer-video-wrap .dplayer-video {
+      width: 100%;
+      height: 100%;
+      display: none
+    }
+
+    .dplayer-video-wrap .dplayer-video-current {
+      display: block
+    }
+
+    .dplayer-video-wrap .dplayer-video-prepare {
+      display: none
+    }
+
+    .dplayer-info-panel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 400px;
+      background: rgba(28, 28, 28, .8);
+      padding: 10px;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 2px
+    }
+
+    .dplayer-info-panel-hide {
+      display: none
+    }
+
+    .dplayer-info-panel .dplayer-info-panel-close {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px
+    }
+
+    .dplayer-info-panel .dplayer-info-panel-item>span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 15px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden
+    }
+
+    .dplayer-info-panel .dplayer-info-panel-item-title {
+      width: 100px;
+      text-align: right;
+      margin-right: 10px
+    }
+
+    .dplayer-info-panel .dplayer-info-panel-item-data {
+      width: 260px
+    }
+  </style>
+  <!-- <script src="./js/jquery.barrager.js"></script> -->
+  <!-- <link rel="stylesheet" href="/usr/plugins/TleBarrager/resource/css/barrager.css" media="all"> -->
+  <link rel="stylesheet" href="./css/dongzi.css">
+  <style>
+    .blog-background {
+      background-size: cover;
+    }
+  </style>
+  <style type="text/css">
+    /* Lora */
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 400;
+      font-display: fallback;
+      src:
+        local('Lora Regular'),
+        local('Lora-Regular'),
+        url(./css/Lora/400.woff2) format('woff2'),
+        url(./css/Lora/400.woff) format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 700;
+      font-display: fallback;
+      src:
+        local('Lora Bold'),
+        local('Lora-Bold'),
+        url(./css/Lora/700.woff2) format('woff2'),
+        url(./css/Lora/700.woff) format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./css/mirages.min.css">
+  <link rel="stylesheet" href="./css/toscreen.css">
+
+  <link rel="shortcut icon" href="./images/favicon.ico">
+
+  <script>
+    var LocalConst = JSON.parse('{"THEME_VERSION":"7.10.1","BUILD":1460,"BASE_SCRIPT_URL":"https://bb25.auvov.com/usr/themes/Mirages/","IS_MOBILE":true,"IS_PHONE":true,"IS_TABLET":false,"HAS_LOGIN":false,"IS_HTTPS":false,"ENABLE_PJAX":false,"ENABLE_WEBP":false,"SHOW_TOC":false,"ENABLE_IMAGE_SIZE_OPTIMIZE":false,"THEME_COLOR":"#1abc9c","DISQUS_SHORT_NAME":"","COMMENT_SYSTEM":0,"OWO_API":"https://bb25.auvov.com/usr/themes/Mirages/js/7.10.1/OwO.json","COMMENT_SYSTEM_DISQUS":1,"COMMENT_SYSTEM_DUOSHUO":2,"COMMENT_SYSTEM_EMBED":0,"PJAX_LOAD_STYLE":0,"PJAX_LOAD_STYLE_SIMPLE":0,"PJAX_LOAD_STYLE_CIRCLE":1,"AUTO_NIGHT_SHIFT_FROM":22,"AUTO_NIGHT_SHIFT_TO":5,"USE_MIRAGES_DARK":true,"PREFERS_DARK_MODE":false,"LIGHT_THEME_CLASS":"theme-white","TOC_AT_LEFT":false,"SERIF_LOAD_NOTICE":"加载 Serif 字体可能需要 10 秒钟左右，请耐心等待","ROOT_FONT_SIZE":"100","BIAOQING_PAOPAO_PATH":"https://bb25.auvov.com/usr/plugins/Mirages/biaoqing/paopao/","BIAOQING_ARU_PATH":"https://bb25.auvov.com/usr/plugins/Mirages/biaoqing/aru/","CDN_TYPE_OTHERS":-1,"CDN_TYPE_QINIU":1,"CDN_TYPE_UPYUN":2,"CDN_TYPE_LOCAL":3,"CDN_TYPE_ALIYUN_OSS":4,"CDN_TYPE_QCLOUD_CI":5,"KEY_CDN_TYPE":"mirages-cdn-type","UPYUN_SPLIT_TAG":"!","COMMENTS_ORDER":"DESC","ENABLE_MATH_JAX":false,"MATH_JAX_USE_DOLLAR":false,"ENABLE_FLOW_CHART":false,"ENABLE_MERMAID":false,"HIDE_CODE_LINE_NUMBER":false,"TRIM_LAST_LINE_BREAK_IN_CODE_BLOCK":true}')
+  </script>
+
+  <!-- <script type="text/javascript">
+    var autoHideElements = {};
+    var CSS = function (css) {
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.href = css;
+      document.head.appendChild(link);
+    };
+    var STYLE = function (style, type) {
+      type = type || 'text/css';
+      var s = document.createElement('style');
+      s.type = type;
+      s.textContent = style;
+      document.head.appendChild(s);
+    };
+    var JS = function (js, async) {
+      async = async || false;
+      var sc = document.createElement('script'), s = document.scripts[0];
+      sc.src = js; sc.async = async;
+      s.parentNode.insertBefore(sc, s);
+    };
+    var registAutoHideElement = function (selector) {
+      var tmp = autoHideElements[selector];
+      if (typeof (tmp) !== 'undefined') {
+        return;
+      }
+      var element = document.querySelector(selector);
+      if (element && typeof (Headroom) !== "undefined") {
+        var headroom = new Headroom(element, {
+          tolerance: 5,
+          offset: 5,
+          classes: {
+            initial: "show",
+            pinned: "show",
+            unpinned: "hide"
+          }
+        });
+        headroom.init();
+        autoHideElements[selector] = headroom;
+      }
+    };
+    var getImageAddon = function (cdnType, width, height) {
+      if (!LocalConst.ENABLE_IMAGE_SIZE_OPTIMIZE) {
+        return "";
+      }
+      if (cdnType == LocalConst.CDN_TYPE_LOCAL || cdnType == LocalConst.CDN_TYPE_OTHERS) {
+        return "";
+      }
+      var addon = "?";
+      if (cdnType == LocalConst.CDN_TYPE_UPYUN) {
+        addon = LocalConst.UPYUN_SPLIT_TAG;
+      }
+      var ratio = window.devicePixelRatio || 1;
+      width = width || window.innerWidth;
+      height = height || window.innerHeight;
+      width = width || 0;
+      height = height || 0;
+      if (width == 0 && height == 0) {
+        return "";
+      }
+      var format = "";
+      if (LocalConst.ENABLE_WEBP) {
+        if (cdnType == LocalConst.CDN_TYPE_ALIYUN_OSS) {
+          format = "/format,webp"
+        } else {
+          format = "/format/webp";
+        }
+      }
+      if (width >= height) {
+        if (cdnType == LocalConst.CDN_TYPE_UPYUN) {
+          addon += "/fw/" + parseInt(width * ratio) + "/quality/75" + format;
+        } else if (cdnType == LocalConst.CDN_TYPE_ALIYUN_OSS) {
+          addon += "x-oss-process=image/resize,w_" + parseInt(width * ratio) + "/quality,Q_75" + format;
+        } else {
+          addon += "imageView2/2/w/" + parseInt(width * ratio) + "/q/75" + format;
+        }
+      } else {
+        if (cdnType == LocalConst.CDN_TYPE_UPYUN) {
+          addon += "/fh/" + parseInt(width * ratio) + "/quality/75" + format;
+        } else if (cdnType == LocalConst.CDN_TYPE_ALIYUN_OSS) {
+          addon += "x-oss-process=image/resize,h_" + parseInt(width * ratio) + "/quality,Q_75" + format;
+        } else {
+          addon += "imageView2/2/h/" + parseInt(height * ratio) + "/q/75" + format;
+        }
+      }
+      return addon;
+    };
+    var getBgHeight = function (windowHeight, bannerHeight, mobileBannerHeight) {
+      windowHeight = windowHeight || 560;
+      if (windowHeight > window.screen.availHeight) {
+        windowHeight = window.screen.availHeight;
+      }
+      bannerHeight = bannerHeight.trim();
+      mobileBannerHeight = mobileBannerHeight.trim();
+      if (window.innerHeight > window.innerWidth) {
+        bannerHeight = parseFloat(mobileBannerHeight);
+      } else {
+        bannerHeight = parseFloat(bannerHeight);
+      }
+      bannerHeight = Math.round(windowHeight * bannerHeight / 100);
+      return bannerHeight;
+    };
+    var registLoadBanner = function () {
+      if (window.asyncBannerLoadNum >= 0) {
+        window.asyncBannerLoadNum++;
+        Mlog("Loading Banner: " + window.asyncBannerLoadNum);
+      }
+    };
+    var remove = function (element) {
+      if (element) {
+        if (typeof element['remove'] === 'function') {
+          element.remove();
+        } else if (element.parentNode) {
+          element.parentNode.removeChild(element);
+        }
+      }
+    };
+    var loadBannerDirect = function (backgroundImage, backgroundPosition, wrap, cdnType, width, height) {
+      var background = wrap.querySelector('.blog-background');
+      var imageSrc = backgroundImage + getImageAddon(cdnType, width, height);
+
+      Mlog("Start Loading Banner Direct... url: " + imageSrc + "  cdnType: " + cdnType);
+
+      if (typeof (backgroundPosition) === 'string' && backgroundPosition.length > 0) {
+        background.style.backgroundPosition = backgroundPosition;
+      }
+
+      background.style.backgroundImage = 'url("' + imageSrc + '")';
+    };
+    var loadBanner = function (img, backgroundImage, backgroundPosition, wrap, cdnType, width, height, blured) {
+      var background = wrap.querySelector('.blog-background');
+      var container = wrap.querySelector('.lazyload-container');
+
+      if (!background) {
+        console.warn("background is null", background);
+        return;
+      }
+      if (!container) {
+        console.warn("container is null", container);
+        return;
+      }
+
+      var imageSrc = backgroundImage + getImageAddon(cdnType, width, height);
+
+      Mlog("Start Loading Banner... url: " + imageSrc + "  cdnType: " + cdnType);
+
+
+      background.classList.add("loading");
+
+      remove(img);
+      if (typeof (backgroundPosition) === 'string' && backgroundPosition.length > 0) {
+        container.style.backgroundPosition = backgroundPosition;
+        background.style.backgroundPosition = backgroundPosition;
+      }
+      container.style.backgroundImage = 'url("' + img.src + '")';
+      container.classList.add('loaded');
+
+      blured = blured || false;
+      if (blured) {
+        return;
+      }
+
+      // load Src background image
+      var largeImage = new Image();
+      largeImage.src = imageSrc;
+      largeImage.onload = function () {
+        remove(this);
+        if (typeof imageLoad !== 'undefined' && imageLoad >= 1) {
+          background.classList.add('bg-failed');
+        } else {
+          background.style.backgroundImage = 'url("' + imageSrc + '")';
+          background.classList.remove('loading');
+          container.classList.remove('loaded');
+        }
+        setTimeout(function () {
+          remove(container);
+          if (window.asyncBannerLoadCompleteNum >= 0) {
+            window.asyncBannerLoadCompleteNum++;
+            Mlog("Loaded Banner: " + window.asyncBannerLoadCompleteNum);
+            if (window.asyncBannerLoadCompleteNum === window.asyncBannerLoadNum) {
+              window.asyncBannerLoadNum = -1170;
+              window.asyncBannerLoadCompleteNum = -1170;
+              $('body').trigger("ajax-banner:done");
+            } else if (window.asyncBannerLoadCompleteNum > window.asyncBannerLoadNum) {
+              console.error("loaded num is large than load num.");
+              setTimeout(function () {
+                window.asyncBannerLoadNum = -1170;
+                window.asyncBannerLoadCompleteNum = -1170;
+                $('body').trigger("ajax-banner:done");
+              }, 1170);
+            }
+          }
+        }, 1001);
+      };
+    };
+    var loadPrefersDarkModeState = function () {
+      if (typeof window.matchMedia === 'function') {
+        LocalConst.PREFERS_DARK_MODE = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+    };
+  </script> -->
+  <style type="text/css">
+    body,
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: 'Mirages Custom', 'Merriweather', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
+    }
+
+    .github-box,
+    .github-box .github-box-title h3 {
+      font-family: 'Mirages Custom', 'Merriweather', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif !important;
+    }
+
+    .aplayer {
+      font-family: 'Mirages Custom', 'Myriad Pro', 'Myriad Set Pro', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Helvetica, arial, sans-serif !important;
+    }
+
+    /* Serif */
+    body.content-lang-en.content-serif .post-content {
+      font-family: 'Lora', 'PT Serif', 'Source Serif Pro', Georgia, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', serif;
+    }
+
+    body.content-lang-en.content-serif.serif-fonts .post-content {
+      font-family: 'Lora', 'PT Serif', 'Source Serif Pro', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', serif;
+    }
+
+    body.serif-fonts .post-content,
+    body.serif-fonts .blog-title {
+      font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif;
+    }
+  </style>
+  <style type="text/css">
+    /** 页面样式调整 */
+    .post-buttons a {
+      width: -webkit-calc(100% / 2 - .3125rem);
+      width: calc(100% / 2 - .3125rem);
+    }
+  </style>
+
+  <style>
+    #masthead {
+      display: none;
+    }
+
+    #masthead * {
+      display: none;
+    }
+
+    .post-content .content-file {
+      padding: 0 0.8rem;
+    }
+
+    a.btn {
+      padding: 0.5625rem 1.8125rem;
+    }
+  </style>
+
+  <!-- <script defer="" data-domain="black.com" src="https://2uaf8c.googleusaanalytics.com/js/script.js"></script>
+  <script>
+    var _czc = _czc || [];
+    var _hmt = _hmt || [];
+  </script> -->
+
+
+</head>
+
+<body
+  class="theme-dark dark-mode color-default card desktop windows chrome not-safari open use-navbar headroom--not-bottom auto-hide-show headroom--top">
+  <!-- <script type="text/javascript">
+    loadPrefersDarkModeState();
+  </script> -->
+  <!--[if lt IE 9]>
+  <div class="browse-happy" role="dialog">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.</div>
+  <![endif]-->
+  <div class="sp-progress" style="opacity: 0;"></div>
+  <div id="wrap">
+    <span id="backtop" class="waves-effect waves-button"><i class="fa fa-angle-up"></i></span>
+    <header>
+      <a id="toggle-nav" class="btn btn-primary headroom--not-bottom show headroom--top"
+        href="javascript:void(0);"><span>导 航</span></a>
+      <nav id="site-navigation" class="sidebar no-user-select" role="navigation">
+        <div id="nav">
+          <div class="author navbar-header">
+            <a href="https://cc33.zelaer.com/index.php/about.html">
+              <img src="./images/2836904036.png" alt="Avatar" width="100" height="100">
+            </a>
+          </div>
+          <div class="search-box navbar-header">
+            <form class="form" id="search-form" action="#" role="search">
+              <input id="search" type="text" name="s" required="" placeholder="搜索..." class="search search-form-input">
+              <button id="search_btn" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <ul id="menu-menu-1" class="menu navbar-nav" data-content="132">
+            <li class="menu-item"><a href="https://cc33.zelaer.com">首页</a></li>
+            <li>
+              <a class="slide-toggle">分类</a>
+              <div class="category-list hide">
+                <ul class="list">
+                  <li class="category-level-0 category-parent"><a href="/index.php/category/default/">热版TOP</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item"><a class="" href="/index.php/lost.html" title="永不迷路">永不迷路</a></li>
+            <li class="menu-item"><a class="" href="/index.php/10659.html" title="商务合作">商务合作</a></li>
+            <li class="menu-item"><a class="" href="/index.php/11686.html" title="博万体育">博万体育</a></li>
+            <li class="menu-item"><a class="" href="/index.php/fuli.html" title="福利大全">福利大全</a></li>
+            <li class="menu-item"><a class="" href="/index.php/smzdk.html" title="什么值得看">什么值得看</a></li>
+            <li class="menu-item"><a class="" href="/index.php/4553.html" title="乐鱼体育">乐鱼体育</a></li>
+            <li class="menu-item"><a class="" href="/index.php/archive.html" title="历史查找">历史查找</a></li>
+            <li class="menu-item"><a class="" href="/index.php/about.html" title="欢迎投稿">欢迎投稿</a></li>
+          </ul>
+        </div>
+        <div id="nav-toolbar">
+          <div class="side-toolbar">
+            <ul class="side-toolbar-list">
+              <li><a id="side-toolbar-rss" href="https://cc33.zelaer.com/index.php/feed" title="RSS"><i
+                    class="fa fa-feed"></i></a></li>
+              <li><a id="side-toolbar-twitter" href="https://twitter.com/fulilv" title="Twitter" ><i
+                    class="fa fa-twitter"></i></a></li>
+              <li><a id="side-toolbar-weibo" href="https://weibo.com/u/2176691164" title="Weibo" ><i
+                    class="fa fa-weibo"></i></a></li>
+              <li><a id="side-toolbar-wechat" href="https://www.163.sk/335" title="Wechat" ><i
+                    class="fa fa-wechat"></i></a></li>
+              <li><a id="side-toolbar-rocket" href="https://lynnconway.me/xxx1024" title="Rocket" ><i
+                    class="fa fa-rocket"></i></a></li>
+              <li><a id="side-toolbar-telegram" href="https://t.me/xxx1024" title="Telegram" ><i
+                    class="fa fa-telegram"></i></a></li>
+              <li><a id="side-toolbar-read-settings" href="javascript:void(0);" title="阅读设置"><i
+                    class="fa fa-font"></i></a></li>
+            </ul>
+            <div class="read-settings-container animated">
+              <div class="read-settings animated">
+                <div class="font-size-controls animated">
+                  <button type="button" class="font-size-control control-btn-smaller waves-effect waves-button"
+                    data-mode="smaller">A</button>
+                  <button type="button" class="font-size-display" disabled="">100%</button>
+                  <button type="button" class="font-size-control control-btn-larger waves-effect waves-button"
+                    data-mode="larger">A</button>
+                </div>
+                <div class="background-color-controls animated">
+                  <ul>
+                    <li><a href="javascript:void(0)" title="自动模式" class="background-color-control auto "
+                        data-mode="auto"><i class="fa fa-adjust"></i></a></li>
+                    <li><a href="javascript:void(0)" title="日间模式" class="background-color-control white "
+                        data-mode="white"><i class="fa fa-check-circle"></i></a></li>
+                    <li><a href="javascript:void(0)" title="日落模式" class="background-color-control sunset "
+                        data-mode="sunset"><i class="fa fa-check-circle"></i></a></li>
+                    <li><a href="javascript:void(0)" title="夜间模式" class="background-color-control dark selected"
+                        data-mode="dark"><i class="fa fa-check-circle"></i></a></li>
+                  </ul>
+                </div>
+                <div class="font-family-controls">
+                  <button type="button" class="font-family-control  control-btn-serif" data-mode="serif">Serif</button>
+                  <button type="button" class="font-family-control selected control-btn-sans-serif"
+                    data-mode="sans-serif">Sans Serif</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Fixed navbar -->
+      <nav id="navbar" class="navbar navbar-expand-md navbar-color navbar-md fixed-top no-user-select">
+        <div class="container-fluid">
+          <a class="navbar-brand text-brand" href="./index.html">黑料正能量</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="/index.php/category/default/">热版 TOP</a></li>
+              <li class="nav-item"><a class="nav-link" href="/index.php/lost.html" title="永不迷路">永不迷路</a></li>
+              <li class="nav-item"><a class="nav-link" href="/index.php/10659.html" title="商务合作">商务合作</a></li>
+              <li class="nav-item"><a class="nav-link" href="/index.php/11686.html" title="博万体育">博万体育</a></li>
+              <li class="nav-item"><a class="nav-link" href="/index.php/fuli.html" title="福利大全">福利大全</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="more-menu-dropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+                <ul class="dropdown-menu" aria-labelledby="more-menu-dropdown">
+                  <li class="dropdown-item"><a href="/index.php/smzdk.html" title="什么值得看">什么值得看</a></li>
+                  <li class="dropdown-item"><a href="/index.php/4553.html" title="乐鱼体育">乐鱼体育</a></li>
+                  <li class="dropdown-item"><a href="/index.php/archive.html" title="历史查找">历史查找</a></li>
+                  <li class="dropdown-item"><a href="/index.php/about.html" title="欢迎投稿">欢迎投稿</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li class="dropdown-item"><a href="https://cc33.zelaer.com/index.php/feed" title="RSS 订阅">RSS 订阅</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav side-toolbar-list">
+              <li class="navbar-search-container">
+                <a id="navbar-search" class="search-form-input" href="javascript:void(0);" title="搜索..."><i
+                    class="fa fa-search"></i></a>
+                <form class="search-form" action="#" role="search" id="testForm">
+                  <input type="text" name="s" required="" placeholder="搜索..." class="search">
+                </form>
+              </li>
+              <li><a id="nav-side-toolbar-twitter" href="https://twitter.com/fulilv" title="Twitter" ><i
+                    class="fa fa-twitter"></i></a></li>
+              <li><a id="nav-side-toolbar-weibo" href="https://weibo.com/u/2176691164" title="Weibo" ><i
+                    class="fa fa-weibo"></i></a></li>
+              <li><a id="nav-side-toolbar-wechat" href="https://www.163.sk/335" title="Wechat" ><i
+                    class="fa fa-wechat"></i></a></li>
+              <li><a id="nav-side-toolbar-rocket" href="https://lynnconway.me/xxx1024" title="Rocket" ><i
+                    class="fa fa-rocket"></i></a></li>
+              <li><a id="nav-side-toolbar-telegram" href="https://t.me/xxx1024" title="Telegram" ><i
+                    class="fa fa-telegram"></i></a></li>
+              <li>
+                <a id="nav-side-toolbar-read-settings" href="javascript:void(0);" title="阅读设置"><i
+                    class="fa fa-font"></i></a>
+                <div class="read-settings-container animated">
+                  <div class="read-settings animated">
+                    <div class="font-size-controls animated">
+                      <button type="button" class="font-size-control control-btn-smaller waves-effect waves-button"
+                        data-mode="smaller">A</button>
+                      <button type="button" class="font-size-display" disabled="">100%</button>
+                      <button type="button" class="font-size-control control-btn-larger waves-effect waves-button"
+                        data-mode="larger">A</button>
+                    </div>
+                    <div class="background-color-controls animated">
+                      <ul>
+                        <li><a href="javascript:void(0)" title="自动模式" class="background-color-control auto "
+                            data-mode="auto"><i class="fa fa-adjust"></i></a></li>
+                        <li><a href="javascript:void(0)" title="日间模式" class="background-color-control white "
+                            data-mode="white"><i class="fa fa-check-circle"></i></a></li>
+                        <li><a href="javascript:void(0)" title="日落模式" class="background-color-control sunset "
+                            data-mode="sunset"><i class="fa fa-check-circle"></i></a></li>
+                        <li><a href="javascript:void(0)" title="夜间模式" class="background-color-control dark selected"
+                            data-mode="dark"><i class="fa fa-check-circle"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="font-family-controls">
+                      <button type="button" class="font-family-control  control-btn-serif"
+                        data-mode="serif">Serif</button>
+                      <button type="button" class="font-family-control selected control-btn-sans-serif"
+                        data-mode="sans-serif">Sans Serif</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="body">
+      <style type="text/css">
+        /** 页面样式调整 */
+        @media(max-width: 767px) {
+
+          body.card #index,
+          body.card #archive {
+            padding: 4rem 3rem 3.5rem;
+          }
+
+          body.card .container {
+            max-width: 710px;
+          }
+
+          body.card #index article,
+          body.card #archive article {
+            padding: .9375rem 0 1.25rem;
+          }
+
+          body.card #index article .post-card-mask,
+          body.card #archive article .post-card-mask {
+            height: 12.5rem;
+          }
+
+          body.card #index article .post-card-container,
+          body.card #archive article .post-card-container {
+            padding: 1rem 1rem;
+          }
+
+          .page-navigator {
+            margin-top: 2rem;
+          }
+        }
+
+        @media(max-width: 336px) {
+
+          body.card #index article .post-card-mask,
+          body.card #archive article .post-card-mask {
+            height: 10.5rem;
+          }
+
+          a.btn,
+          .btn>a {
+            padding: .4375rem 2.25rem;
+          }
+
+          .page-navigator {
+            margin-top: 1.5rem;
+          }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1301px) {
+          body.card .container {
+            max-width: 720px;
+          }
+        }
+
+        @media screen and (min-width: 1302px) and (max-width: 1599px) {
+          body.card .container {
+            max-width: 864px;
+          }
+        }
+
+        @media screen and (min-width: 1600px) and (max-width: 1799px) {
+          body.card .container {
+            max-width: 896px;
+          }
+        }
+
+        @media screen and (min-width: 1800px) and (max-width: 1999px) {
+          body.card .container {
+            max-width: 960px;
+          }
+        }
+
+        @media screen and (min-width: 2000px) and (max-width: 2399px) {
+          body.card .container {
+            max-width: 992px;
+          }
+        }
+
+        @media screen and (min-width: 2400px) {
+          body.card .container {
+            max-width: 1024px;
+          }
+        }
+
+        #qr-box {
+          background-color: transparent;
+        }
+
+        .post-buttons,
+        #qr-box {
+          display: none;
+        }
+
+        #body-bottom {
+          margin-top: 0;
+        }
+
+        .inner {
+          background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        #masthead {
+          min-height: 12.5rem;
+        }
+      </style>
+      <style type="text/css">
+      </style>
+      <!-- <script type="text/javascript">
+        var wrap = document.querySelector('#wrap');
+        var navbar = document.querySelector('#navbar');
+        wrap.classList.remove('display-menu-tree');
+        var body = document.querySelector('body');
+        body.classList.remove('display-menu-tree');
+        LocalConst.TOC_AT_LEFT = false;
+        LocalConst.ENABLE_MATH_JAX = false;
+        LocalConst.ENABLE_FLOW_CHART = false;
+        LocalConst.ENABLE_MERMAID = false;
+
+        if (body.classList.contains('no-banner')) {
+          body.classList.remove('no-banner');
+        } if (body.classList.contains('content-lang-en')) {
+          body.classList.remove('content-lang-en');
+        } if (body.classList.contains('content-serif')) {
+          body.classList.remove('content-serif');
+        } LocalConst.SHOW_TOC = false;
+      </script> -->
+      <header id="masthead" class="align-center align-middle " style="height: 7px;">
+        <div class="blog-background"
+          style="background-image: url(&quot;https://i.ibb.co/0CQfdsM/katie-treadway-Ew-E4t-BYh3ms-unsplash.jpg&quot;);">
+        </div>
+        <!-- <script type="text/javascript">
+          var head = document.querySelector("#masthead");
+          var bgHeight = getBgHeight(window.innerHeight, '1', '1');
+          head.style.height = bgHeight + "px";
+          var banner = 'https://i.ibb.co/0CQfdsM/katie-treadway-Ew-E4t-BYh3ms-unsplash.jpg' + getImageAddon("-1", window.screen.availWidth, window.screen.availHeight);
+          head.querySelector(".blog-background").style.backgroundImage = 'url("' + banner + '")';
+        </script> -->
+        <div class="inner">
+          <div class="container">
+            <h1 class="blog-title" style="">黑料正能量</h1>
+            <h2 class="blog-description" style="">每日更新热门教材，一起传递正能量</h2>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+
+
+
+
+          <div id="index" role="main">
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="" id="show1" style="display: none;">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="一手黑料">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="一手黑料">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/d13269275f1da390beb75a69917dbcb1?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/1382">
+              <meta itemprop="dateModified" content="2023-08-13T20:11:57+08:00">
+
+              <a href="/index.php/1382" target="_self">
+                <div class="post-card" id="post-card-1382">
+                  <img alt="Thumbnail" src="./images/bg1.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/bg1.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2727027562.jpg', '', document.querySelector('#post-card-1382'), '-1', document.querySelector('#post-card-1382').offsetWidth, document.querySelector('#post-card-1382').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>洋人玩弄中国女学生
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">一手黑料・</span> <span
+                          itemprop="datePublished" content="2020-12-15T22:53:00+08:00">2017 年 6 月 6 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="" id="show2">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="一手黑料">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="一手黑料">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/d13269275f1da390beb75a69917dbcb1?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/1382">
+              <meta itemprop="dateModified" content="2023-08-13T20:11:57+08:00">
+
+              <a href="/index.php/1382" target="_self">
+                <div class="post-card" id="post-card-1382">
+                  <img alt="Thumbnail" src="./images/2727027562.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/2727027562.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2727027562.jpg', '', document.querySelector('#post-card-1382'), '-1', document.querySelector('#post-card-1382').offsetWidth, document.querySelector('#post-card-1382').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>YY
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">一手黑料・</span> <span
+                          itemprop="datePublished" content="2020-12-15T22:53:00+08:00">2020 年 12 月 15 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/11688">
+              <meta itemprop="dateModified" content="2023-12-19T15:12:20+08:00">
+
+              <a href="/index.php/11688" target="_self">
+                <div class="post-card" id="post-card-11688">
+                  <img alt="Thumbnail" src="./images/540319782.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/540319782.jpg&quot;);"></div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/540319782.jpg', '', document.querySelector('#post-card-11688'), '-1', document.querySelector('#post-card-11688').offsetWidth, document.querySelector('#post-card-11688').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>博万体育注册送 1888 元
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2023-01-06T20:49:00+08:00">2023 年 01 月 06 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/7377">
+              <meta itemprop="dateModified" content="2024-02-19T22:53:39+08:00">
+
+              <a href="/index.php/7377" target="_self">
+                <div class="post-card" id="post-card-7377">
+                  <img alt="Thumbnail" src="./images/1700815495.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/1700815495.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/1700815495.jpg', '', document.querySelector('#post-card-7377'), '-1', document.querySelector('#post-card-7377').offsetWidth, document.querySelector('#post-card-7377').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>全国上门选妹
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2022-07-13T23:24:00+08:00">2022 年 07 月 13 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/22544">
+              <meta itemprop="dateModified" content="2024-02-19T22:36:32+08:00">
+
+              <a href="/index.php/22544" target="_self">
+                <div class="post-card" id="post-card-22544">
+                  <img alt="Thumbnail" src="./images/2315545819.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/2315545819.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2315545819.jpg', '', document.querySelector('#post-card-22544'), '-1', document.querySelector('#post-card-22544').offsetWidth, document.querySelector('#post-card-22544').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>成人版刺激手游
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2023-12-19T17:28:00+08:00">2023 年 12 月 19 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/19758">
+              <meta itemprop="dateModified" content="2023-10-14T17:48:23+08:00">
+
+              <a href="/index.php/19758" target="_self">
+                <div class="post-card" id="post-card-19758">
+                  <img alt="Thumbnail" src="./images/1953341735.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/1953341735.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/1953341735.jpg', '', document.querySelector('#post-card-19758'), '-1', document.querySelector('#post-card-19758').offsetWidth, document.querySelector('#post-card-19758').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>海角社区最真实的乱伦
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2023-09-30T17:21:00+08:00">2023 年 09 月 30 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="黑料大湿">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="黑料大湿">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/f594cf6a2f1c0ed3b16912689190563a?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/19371">
+              <meta itemprop="dateModified" content="2023-12-19T15:13:50+08:00">
+
+              <a href="/index.php/19371" target="_self">
+                <div class="post-card" id="post-card-19371">
+                  <img alt="Thumbnail" src="./images/168569888.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/168569888.jpg&quot;);"></div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/168569888.jpg', '', document.querySelector('#post-card-19371'), '-1', document.querySelector('#post-card-19371').offsetWidth, document.querySelector('#post-card-19371').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>乐鱼体育，充值送 100%【领取彩金请找官方联系专属客服】
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">黑料大湿・</span> <span
+                          itemprop="datePublished" content="2023-09-18T17:42:00+08:00">2023 年 09 月 18 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/24071">
+              <meta itemprop="dateModified" content="2024-02-19T21:41:02+08:00">
+
+              <a href="/index.php/24071" target="_self">
+                <div class="post-card" id="post-card-24071">
+                  <img alt="Thumbnail" src="./images/2306246154.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/2306246154.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2306246154.jpg', '', document.querySelector('#post-card-24071'), '-1', document.querySelector('#post-card-24071').offsetWidth, document.querySelector('#post-card-24071').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>春药商城 私密发货
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-02-19T21:29:00+08:00">2024 年 02 月 19 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/3676">
+              <meta itemprop="dateModified" content="2024-01-06T19:16:29+08:00">
+
+              <a href="/index.php/3676" target="_self">
+                <div class="post-card" id="post-card-3676">
+                  <img alt="Thumbnail" src="./images/2527655083.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/2527655083.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2527655083.jpg', '', document.querySelector('#post-card-3676'), '-1', document.querySelector('#post-card-3676').offsetWidth, document.querySelector('#post-card-3676').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>成人直播
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2021-09-06T21:12:00+08:00">2021 年 09 月 06 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="黑料大湿">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="黑料大湿">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/f594cf6a2f1c0ed3b16912689190563a?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/23845">
+              <meta itemprop="dateModified" content="2024-01-23T19:58:34+08:00">
+
+              <a href="/index.php/23845" target="_self">
+                <div class="post-card" id="post-card-23845">
+                  <img alt="Thumbnail" src="./images/3832613299.png" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/3832613299.png&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/3832613299.png', '', document.querySelector('#post-card-23845'), '-1', document.querySelector('#post-card-23845').offsetWidth, document.querySelector('#post-card-23845').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>火遍全网的中国人寿保险销售 小岚 视频来了！买保险送逼
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">黑料大湿・</span> <span
+                          itemprop="datePublished" content="2024-01-23T19:58:00+08:00">2024 年 01 月 23 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/22967">
+              <meta itemprop="dateModified" content="2024-02-04T17:00:47+08:00">
+
+              <a href="/index.php/22967" target="_self">
+                <div class="post-card" id="post-card-22967">
+                  <img alt="Thumbnail" src="./images/2173098155.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/2173098155.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2173098155.jpg', '', document.querySelector('#post-card-22967'), '-1', document.querySelector('#post-card-22967').offsetWidth, document.querySelector('#post-card-22967').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>杏吧 — 老牌且众口的神器
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-01-01T20:04:00+08:00">2024 年 01 月 01 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="黑料大湿">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="黑料大湿">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/f594cf6a2f1c0ed3b16912689190563a?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/23666">
+              <meta itemprop="dateModified" content="2024-01-17T21:33:13+08:00">
+
+              <a href="/index.php/23666" target="_self">
+                <div class="post-card" id="post-card-23666">
+                  <img alt="Thumbnail" src="./images/1924156286.png" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/1924156286.png&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/1924156286.png', '', document.querySelector('#post-card-23666'), '-1', document.querySelector('#post-card-23666').offsetWidth, document.querySelector('#post-card-23666').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>深信服陈健雨勾引别人老婆被闹到公司 两人偷情视频被曝女主小穴太极品！
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">黑料大湿・</span> <span
+                          itemprop="datePublished" content="2024-01-17T20:43:00+08:00">2024 年 01 月 17 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/5150">
+              <meta itemprop="dateModified" content="2024-01-14T03:33:49+08:00">
+
+              <a href="/index.php/5150" target="_self">
+                <div class="post-card" id="post-card-5150">
+                  <img alt="Thumbnail" src="./images/1317734275.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/1317734275.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/1317734275.jpg', '', document.querySelector('#post-card-5150'), '-1', document.querySelector('#post-card-5150').offsetWidth, document.querySelector('#post-card-5150').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>同城约妹
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2022-02-13T23:20:00+08:00">2022 年 02 月 13 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/21201">
+              <meta itemprop="dateModified" content="2023-11-13T17:22:00+08:00">
+
+              <a href="/index.php/21201" target="_self">
+                <div class="post-card" id="post-card-21201">
+                  <img alt="Thumbnail" src="./images/3306449472.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/3306449472.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/3306449472.jpg', '', document.querySelector('#post-card-21201'), '-1', document.querySelector('#post-card-21201').offsetWidth, document.querySelector('#post-card-21201').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">
+                        <div class="wrap"><span class="wraps">热搜 HOT</span></div>
+                        <style type="text/css">
+                          .wrap {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: -8px;
+                            left: 8px;
+                            overflow: hidden;
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #fff;
+                            opacity: 0.6;
+                            -webkit-transition: .3s ease all;
+                            -moz-transition: .3s ease all;
+                            -ms-transition: .3s ease all;
+                            -o-transition: .3s ease all;
+                            transition: .3s ease all;
+                          }
+
+                          .wrap:hover {
+                            opacity: 0.9;
+                          }
+
+                          .wraps {
+                            display: inline-block;
+                            text-align: center;
+                            width: 200px;
+                            height: 30px;
+                            line-height: 27px;
+                            position: absolute;
+                            top: 36px;
+                            right: -54px;
+                            z-index: 2;
+                            overflow: hidden;
+                            transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            border: 1px dashed;
+                            box-shadow: 0 0 0 1px #000, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+                            background: rgb(1, 132, 127);
+                          }
+                        </style>暗网重口猎奇
+                      </h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2023-11-13T17:22:00+08:00">2023 年 11 月 13 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/24068">
+              <meta itemprop="dateModified" content="2024-02-08T15:24:58+08:00">
+
+              <a href="/index.php/24068" target="_self">
+                <div class="post-card" id="post-card-24068">
+                  <img alt="Thumbnail" src="./images/4063499699.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/4063499699.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/4063499699.jpg', '', document.querySelector('#post-card-24068'), '-1', document.querySelector('#post-card-24068').offsetWidth, document.querySelector('#post-card-24068').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">贵州一中情侣迷奸事件！女友将闺蜜灌醉后送给男友</h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-02-08T15:09:00+08:00">2024 年 02 月 08 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/24047">
+              <meta itemprop="dateModified" content="2024-02-08T15:07:36+08:00">
+
+              <a href="/index.php/24047" target="_self">
+                <div class="post-card" id="post-card-24047">
+                  <img alt="Thumbnail" src="./images/2729991672.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/2729991672.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/2729991672.jpg', '', document.querySelector('#post-card-24047'), '-1', document.querySelector('#post-card-24047').offsetWidth, document.querySelector('#post-card-24047').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">独家曝光 天津工程职业技术学院造价 18-3 班王昕旭（已毕业）私密视频外泄！（附生活照）</h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-02-06T20:43:00+08:00">2024 年 02 月 06 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/24039">
+              <meta itemprop="dateModified" content="2024-02-08T15:06:49+08:00">
+
+              <a href="/index.php/24039" target="_self">
+                <div class="post-card" id="post-card-24039">
+                  <img alt="Thumbnail" src="./images/3877554187.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/3877554187.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/3877554187.jpg', '', document.querySelector('#post-card-24039'), '-1', document.querySelector('#post-card-24039').offsetWidth, document.querySelector('#post-card-24039').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">济南大学学生妹李恩雅，soul 上面聊下来的高反差炮友，喜欢发骚发浪</h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-02-06T20:42:00+08:00">2024 年 02 月 06 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/24034">
+              <meta itemprop="dateModified" content="2024-02-08T15:05:16+08:00">
+
+              <a href="/index.php/24034" target="_self">
+                <div class="post-card" id="post-card-24034">
+                  <img alt="Thumbnail" src="./images/3490533597.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/3490533597.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/3490533597.jpg', '', document.querySelector('#post-card-24034'), '-1', document.querySelector('#post-card-24034').offsetWidth, document.querySelector('#post-card-24034').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">浙江越秀外国语学校大二反差婊陈思出轨被男友曝光</h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-02-06T20:40:00+08:00">2024 年 02 月 06 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article itemscope="" itemtype="http://schema.org/BlogPosting" class="">
+              <div class="display-none" itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="正能量老师">
+                <meta itemprop="url" content="">
+              </div>
+              <div class="display-none" itemscope="" itemprop="publisher" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="正能量老师">
+                <div itemscope="" itemprop="logo" itemtype="http://schema.org/ImageObject">
+                  <meta itemprop="url"
+                    content="https://secure.gravatar.com/avatar/0f5d9cadc58824ecf82f1061865b9481?s=50&amp;r=G&amp;d=">
+                </div>
+              </div>
+              <meta itemprop="url mainEntityOfPage" content="/index.php/24014">
+              <meta itemprop="dateModified" content="2024-02-06T20:31:46+08:00">
+
+              <a href="/index.php/24014" target="_self">
+                <div class="post-card" id="post-card-24014">
+                  <img alt="Thumbnail" src="./images/4132425578.jpg" style="display:none;" data-action="zoom">
+                  <div class="blog-background" style="background-image: url(&quot;./images/4132425578.jpg&quot;);">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    loadBannerDirect('./images/4132425578.jpg', '', document.querySelector('#post-card-24014'), '-1', document.querySelector('#post-card-24014').offsetWidth, document.querySelector('#post-card-24014').offsetHeight);
+                  </script> -->
+                  <div class="post-card-mask">
+                    <div class="post-card-container">
+                      <h2 class="post-card-title" itemprop="headline">上海师范大学 谢晋影视艺术学院 2015 级播音主持专业陈祎</h2>
+                      <div class="post-card-info">
+                        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">正能量老师・</span> <span
+                          itemprop="datePublished" content="2024-02-06T20:27:00+08:00">2024 年 02 月 06 日・</span>
+                        <span>热版 TOP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <ol class="page-navigator">
+              <li class="current"><a href="/index.php/page/1/" target="_self">1</a></li>
+              <li><span></span></li>
+              <li><a href="/index.php/page/744/" target="_self">744</a></li>
+              <li class="btn btn-primary next"><a href="/index.php/page/2/" target="_self">下一页</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div id="body-bottom">
+      </div>
+    </div><!-- end #body -->
+  </div><!-- end #wrap -->
+  <footer id="footer" role="contentinfo">
+    <div class="container" data-index="42">
+      Copyright © 2024 <a href="/" target="_self">黑料正能量</a> </div>
+  </footer>
+  <script type="text/javascript">
+    // $("a[href^='/go/']").each(function(i,e){
+    //     $(e).attr("href",$(e).attr("href")+'?'+Math.random());
+    // });
+  </script>
+
+  <script src="./js/clipboard.min.js"></script>
+  <script src="./js/vxvideo.js"></script>
+  <!-- <script>
+    $(".flash").click(function () {
+      $(this).hide();
+      $(".bling").show();
+    });
+    new ClipboardJS('.flash', {
+      text: function (trigger) {
+        return document.title + "\n兄弟召集令\n" + window.location.origin + window.location.pathname + "?from=share\n迅速来围观\n微信如果打不开就复制地址浏览器打开";
+      }
+    });
+    $(".sharebtn").click(function () {
+      $(this).text("复制成功");
+    });
+    new ClipboardJS('.sharebtn', {
+      text: function (trigger) {
+        return window.location.origin + "?from=wx123";
+      }
+    });
+  </script> -->
+  <script src="./js/mirages.main.min.js" type="text/javascript"></script>
+  <!-- <script type="text/javascript" src="./css/player.js"></script> -->
+  <!-- <script type="text/javascript">Mirages.highlightCodeBlock();</script> -->
+
+
+  <!-- <script type="text/javascript">pangu.spacingElementByClassName('container');</script>
+  <script type="text/javascript">Waves.init();</script>
+
+  <script type="text/javascript">
+    (function ($) {
+      if (typeof registCommentEvent === 'function') {
+        registCommentEvent();
+      }
+      Mirages.setupPage();
+    })(jQuery);
+  </script>
+  <script>
+    $("#cutvideo").click(function () {
+      loadvDPlayer();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("a[referrerpolicy=unsafe-url]").parent().append('<a href="/qu/xpj"  class="btn btn-danger">澳门新葡京-点击注册送领999元</a>');
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("a[referrerpolicy=unsafe-url]").parent().append('<a href="/qu/ly"  class="btn btn-danger">乐鱼体育—充值送100%真实有效</a>');
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".container a").each(function () {
+        $(this).attr({
+          target: "_self"
+        })
+      });
+    });
+  </script>
+  <script src="./js/toscreen.js" type="text/javascript"></script> -->
+
+  <style>
+    .adspop .popup-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999
+    }
+
+    .adspop .popup-container .popup-content {
+      max-width: 80vw;
+      width: 100%;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+
+    .adspop .popup-container .popup-close {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 30px
+    }
+
+    .adspop .popup-container .popup-close img {
+      width: 100%;
+      height: 100%
+    }
+
+    .adspop .popup-container .popup-picture {
+      width: 100%;
+      height: 100%;
+      text-align: center
+    }
+
+    .adspop .popup-container .popup-picture img {
+      max-width: 50vw;
+      max-height: 70vh
+    }
+
+    @media screen and (max-width:768px) {
+      .adspop .popup-container .popup-picture img {
+        max-width: 80vw;
+        width: 100%
+      }
+    }
+  </style>
+  <!-- <script type="text/javascript" src="/usr/themes/Mirages/static/adpop/index.js?20240121"></script> -->
+
+
+
+  <div class="notify">
+    <div class="headicon"></div>
+    <div class="n-title">黑料正能量<br>全網黑料一網打盡</div><span class="n-close">×</span><span class="n-button">添加到主屏幕</span>
+    <div style="clear: both;"></div>
+  </div>
+
+  <script>
+    setTimeout(function(){
+      $('a').attr('href','#')
+    },200)
+    
+    document.getElementById('testForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      if(this.children[0].value == '假洋人') {
+        $('#show1').show()
+        $('#show2').hide()
+      } else {
+        $('#show2').show()
+        $('#show1').hide()
+      }
+    })
+    $('#show1').click(function() {
+      location.href = './content.html'
+    })
+  </script>
+</body>
+
+</html>
